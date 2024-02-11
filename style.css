@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: #ffffff;
+    height: 100vh;
+    color: #000;
+}
+
+/* Nav */
+header {
+    box-shadow: 0 4px 17px rgba(0, 0, 0, .500);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.text {
+    height: auto;
+    width: auto;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo img {
+    max-width: 80px;
+    height: auto;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+button.голосовой {
+    border-radius: 40px 40px 40px 40px;
+    border: 2px solid #DCDCDC;
+    background-color: lightgray;
+    right: 10px;
+}
+
+.container div {
+    display: flex;
+}
+
+
+.right button {
+    margin-right: 20px;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.center {
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+/* Nav End */
+
+/*leftBox*/
+.leftBox {
+    width: 60px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+
+.leftBox button {
+
+    margin: 0 0 80px 20px;
+}
+
+.horizontalBox {
+    width: calc(100% - 60px);
+    height: 60px;
+    display: flex;
+    margin-left: 100px;
+    overflow: initial;
+}
+
+.horizontalBox button {
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #DCDCDC;
+    background-color: lightgray;
+    cursor: pointer;
+    height: 40px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    outline: none;
+    padding: 0 5px 0 5px;
+    margin: 5px;
+}
+
+/*leftBox end*/
+#input {
+    border-radius: 40px;
+    border: 2px solid #DCDCDC;
+    position: relative;
+    height: 37px;
+    width: 100%;
+    outline: none;
+}
+
+#btn {
+    border-radius: 0 40px 40px 0;
+    border: 2px solid #DCDCDC;
+    background-color: lightgray;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 64px;
+    display: inline-block;
+    vertical-align: middle;
+    outline: none;
+}
+
+body {
+    font-size: x-large;
+}
+
+
+#sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: left 0.3s ease;
+}
+
+#toggle-btn {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.panel-btn {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: transform 0.5s ease;
+    overflow: scroll;
+    margin-left: 100px;
+}
+
+.slide {
+    flex: 0 0 32%;
+    margin-bottom: 50px;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .right button {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .leftBox {
+        display: none;
+    }
+
+    .leftBox {
+        padding: 0 0 0 0;
+    }
+
+    .horizontalBox {
+        margin-left: 10px;
+    }
+
+    .slider {
+        margin-left: 15px;
+        flex: 0 0 60%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #input {
+        display: none;
+    }
+
+    #btn {
+        border-radius: 40px 40px 40px 40px;
+        border: 2px solid #DCDCDC;
+        background-color: lightgray;
+        position: absolute;
+
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+        vertical-align: middle;
+        outline: none;
+    }
+
+    button.голосовой {
+        display: none;
+    }
+
+    #btn {
+        top: -20px;
+    }
+    .slide {
+        flex: 0 0 100%; /* Показывать по одной картинке в ряду */
+    }
+}
+
+
+
